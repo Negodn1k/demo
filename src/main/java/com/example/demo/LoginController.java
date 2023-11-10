@@ -37,7 +37,7 @@ public class LoginController extends Application {
     }
 
     public void onLinkClick(ActionEvent actionEvent) {
-        getHostServices().showDocument("https://youtube.com");
+        getHostServices().showDocument("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
 
     @Override
