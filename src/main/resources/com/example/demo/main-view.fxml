@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="189.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Big Ninety nine    5$">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="17.0" mnemonicParsing="false" onAction="#bigNNAddButtonClick" text="Add" />
+      <Label layoutX="14.0" layoutY="45.0" text="Ninety Six           10$">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="48.0" mnemonicParsing="false" onAction="#nSAddButtonClick" text="Add" />
+      <Label layoutX="14.0" layoutY="76.0" text="Large Big Six      15$">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="79.0" mnemonicParsing="false" onAction="#lBSAddButtonClick" text="Add" />
+      <Label layoutX="14.0" layoutY="107.0" text="Big Smoke          20$">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="110.0" mnemonicParsing="false" onAction="#bigSmokeAddButtonClick" text="Add" />
+      <Label layoutX="14.0" layoutY="138.0" text="Grove Street       25$">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="141.0" mnemonicParsing="false" onAction="#groveStreetAddButtonClick" text="Add" />
+      <Button layoutX="300.0" layoutY="17.0" mnemonicParsing="false" onAction="#onCartButtonClick" prefHeight="45.0" prefWidth="89.0" text="Cart" />
+   </children>
+</AnchorPane>
