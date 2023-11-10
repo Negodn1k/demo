@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.demo.CartController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="268.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CartController">
+   <children>
+      <ListView fx:id="orderList" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="price" layoutX="86.0" layoutY="238.0" />
+   </children>
 </AnchorPane>

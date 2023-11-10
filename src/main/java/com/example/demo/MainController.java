@@ -1,39 +1,49 @@
 package com.example.demo;
 
+import javafx.beans.Observable;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableArray;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainController {
-    HashMap<String, Integer> order = new HashMap<>();
-
+    ObservableList<String> order = FXCollections.observableArrayList();
+    int orderPrice = 0;
     @FXML
     protected void bigNNAddButtonClick() {
-        order.put("Big Ninety Nine", 5);
+        order.add("Big Ninety Nine");
+        orderPrice += 5;
     }
 
     @FXML
     protected void nSAddButtonClick() {
-        order.put("Ninety Six", 10);
+        order.add("Ninety Six");
+        orderPrice += 10;
     }
 
     @FXML
     protected void lBSAddButtonClick() {
-        order.put("Large Big Six", 15);
+        order.add("Large Big Six");
+        orderPrice += 15;
     }
 
     @FXML
     protected void bigSmokeAddButtonClick() {
-        order.put("Big Smoke", 20);
+        order.add("Big Smoke");
+        orderPrice += 20;
     }
 
     @FXML
     protected void groveStreetAddButtonClick() {
-        order.put("Grove Street", 25);
+        order.add("Grove Street");
+        orderPrice += 25;
     }
 
     @FXML
@@ -42,6 +52,8 @@ public class MainController {
         Stage stage = new Stage();
         Scene scene = new Scene(loader.load());
         stage.setScene(scene);
+        CartController cartController = loader.getController();
+        cartController.initData(order, orderPrice);
         stage.setResizable(false);
         stage.setTitle("IT'S PIZZA CART!");
         stage.show();
