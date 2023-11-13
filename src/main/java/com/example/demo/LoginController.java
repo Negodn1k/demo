@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -49,6 +50,7 @@ public class LoginController extends Application {
         FXMLLoader loader = new FXMLLoader(LoginController.class.getResource("main-view.fxml"));
         Scene scene = new Scene(loader.load(), 400, 200);
         Stage stage = new Stage();
+        stage.getIcons().add(new Image("https://img.freepik.com/free-vector/flying-slice-of-pizza-cartoon-vector-illustration-fast-food-concept-isolated-vector-flat-cartoon-style_138676-1934.jpg?w=740"));
         stage.setTitle("IT'S PIZZA TIME!");
         stage.setResizable(false);
         stage.setScene(scene);

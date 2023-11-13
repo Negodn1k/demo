@@ -5,7 +5,8 @@
 
 <AnchorPane prefHeight="268.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CartController">
    <children>
-      <ListView fx:id="orderList" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
-      <Label fx:id="price" layoutX="86.0" layoutY="238.0" />
+      <ListView fx:id="orderList" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="220.0" />
+      <Label fx:id="price" layoutX="183.0" layoutY="236.0" prefHeight="17.0" prefWidth="48.0" />
+      <Button layoutX="14.0" layoutY="232.0" mnemonicParsing="false" onAction="#openDetailWindow" text="Complete order" />
    </children>
 </AnchorPane>
